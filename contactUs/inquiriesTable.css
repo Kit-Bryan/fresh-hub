@@ -1,0 +1,182 @@
+/**************************
+Author: Gan Ming liang
+TP No: TP063338 
+Subject: Admin View Inquiries UI
+**************************/
+
+/**************************
+F O N T - U S E D:
+font-family: 'Calistoga', cursive;
+font-family: 'Didact Gothic', sans-serif;
+**************************/
+
+html {
+    background: #163A24;
+}
+
+.database-feedback {
+    background:#163A24;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.feedback-header {
+    color: #fff;
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.feedback-border {
+    width: 100px;
+    height: 10px;
+    background: #61910F;
+    margin: 40px auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    color: #000;
+    background: #F2EFE6;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+th {
+    background-color: #262228;
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+/* width adjustment */
+.inquiry-textarea {
+    width: 40%;
+}
+
+.inquiry-id {
+    width: 12%;
+}
+
+.inquiry-subject {
+    width: 18%;
+}
+
+.inquiry-email {
+    width: 20%;
+}
+
+.inquiry-name {
+    width: 12%;
+}
+
+.modify-inquiry {
+    background: #163A24;
+    padding-bottom: 30px;
+    width: 50%;
+    margin: auto;
+}
+
+.inquiry-box {
+    /* max-width: 950px; */
+    /* margin-left: 480px; */
+    overflow: hidden;
+    display: inline;
+}
+
+.inquiry-form {
+    width:59%;
+    display: inline;
+    box-sizing: border-box;
+    margin: auto;
+    /* margin: 16px 0; */
+    border: 0;
+    border-radius: 30px;
+    background: #DBC8AC;
+    padding: 20px 40px;
+    outline: none;
+    color: #555;
+    transition: 0.5s;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.inquiry-form:hover {
+    background: #F2EFE6;
+}
+
+.inquiry-submit {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 12%;
+    border: 0;
+    background: #29870b;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius:30px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+.inquiry-submit:hover {
+    background: #F2EFE6;
+    color: #555;
+}
+
+.inquiry-delete {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 12%;
+    border: 0;
+    background: #DD5353;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius:30px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+.inquiry-delete:hover {
+    background: #F2EFE6;
+    color: #555;
+}
+
+.inquiry-reset {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 12%;
+    border: 0;
+    background: #E48929;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius:30px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+.inquiry-reset:hover {
+    background: #F2EFE6;
+    color: #555;
+}

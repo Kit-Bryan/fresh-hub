@@ -1,0 +1,526 @@
+/**************************
+Author: Gan Ming liang
+TP No: TP063338 
+Subject: Homepage UI
+**************************/
+
+/**************************
+F O N T - U S E D:
+font-family: 'Calistoga', cursive;
+font-family: 'Didact Gothic', sans-serif;
+**************************/
+
+
+/*========================================== [1.0] General ==========================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+}
+
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.small-container {
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.title {
+    font-family: 'Calistoga', cursive;
+    text-align: center;
+    margin: 0 auto 5px 5px;
+    line-height: 60px;
+    color: #32142A
+}
+
+
+.titleLine {
+    width: 100px;
+    height: 10px;
+    background: #61910F;
+    margin: 40px auto;
+}
+
+
+h4 {
+    color: #555;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*========================================== [2.0] Header ==========================================*/
+.header {
+    background: #163A24;
+    position: sticky;
+    top: 0;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+/*========================================== [3.0] Thumbnail ==========================================*/
+
+.thumbnail .container .row .col-2 {
+    padding-bottom: 80px;
+}
+
+
+.col-2 {
+    flex-basis: 40%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    font-family: 'Calistoga', cursive;
+    letter-spacing: 2px;
+    color: #FFF;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+
+.col-2 p {
+    color: #FFF;
+}
+
+
+.btnCalltoAction {
+    display: inline-block;
+    background: #E48929;
+    color: #FFF;
+    padding: 10px 35px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+
+.btnCalltoAction:hover {
+    background: #61910F;
+}
+
+
+
+.thumbnail {
+    background: #163A24;
+}
+
+
+/*========================================== [4.0] Categories ==========================================*/
+.categories {
+    padding: 70px 0;
+    background: #FAF7F0;
+}
+
+
+.categories .row {
+    column-gap: 60px;
+}
+
+.categories .col-3 .vege {
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0px;
+    color: #FFF;
+    font-size: 48px;
+    padding-bottom: 10px;
+    background: #3D8361;
+}
+
+
+.categories .col-3 .fruit {
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0px;
+    color: #FFF;
+    font-size: 48px;
+    padding-bottom: 10px;
+    background: #E48929;
+}
+
+
+.categories .col-3 .meat {
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0px;
+    color: #FFF;
+    font-size: 48px;
+    padding-bottom: 10px;
+    background: #DD5353;
+}
+
+
+.col-3 {
+    flex: 30%;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+
+.col-3 img{
+    width: 100%;
+}
+
+
+
+
+/*========================================== [5.0] Products ==========================================*/
+.products {
+    margin: 70px 0;
+}
+
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+
+.col-4 p{
+    font-size: 16px;
+}
+
+
+.col-4:hover {
+    transform: translateY(-10px);
+}
+
+/*========================================== [6.0] Offers ==========================================*/
+
+.offer {
+    background: #32142A;
+    padding: 30px 0;
+}
+
+
+.col-2 .offer-img {
+    padding: 50px;
+}
+
+
+.col-2 .offer-p {
+    color: #FFF;
+}
+
+
+.col-2 .offer-h1{
+    color: #EDDBC0;
+}
+
+
+small {
+    color: #FFF;
+}
+
+
+.btnOffer {
+    display: inline-block;
+    background: #DD5353;
+    color: #FFF;
+    padding: 10px 35px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+
+.btnOffer:hover {
+    background: #F1A661;
+}
+
+/*========================================== [7.0] About Us ==========================================*/
+.testimonial {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background: #F2EFE6;
+}
+
+
+.testimonial .row {
+    column-gap: 40px;
+}
+
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.5s;
+    background: #FAF7F0;
+    height: 450px;
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+
+.testimonial .col-3 h3{
+    font-family: 'Calistoga', cursive;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 15px;
+    color: #555;
+}
+
+.testimonial .col-3 h2{
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+}
+
+
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+}
+
+
+.bi-chat-square-quote-fill {
+    font-size: 34px;
+    color: #163A24;
+}
+
+
+.col-3 p {
+    font-size: 16px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.companyIntro {
+    background: #E2DCC8;
+    padding: 30px 0;
+}
+
+
+.companyIntro .col-2 h1 {
+    font-size: 50px;
+    font-family: 'Calistoga', cursive;
+    letter-spacing: 2px;
+    color: #263238;
+    line-height: 60px;
+    margin: 50px 0;
+    text-align: top;
+    margin-top: -20px;
+}
+
+.companyIntro .col-2 p {
+    color: #2C272E;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+.companyIntro .col-2 img {
+    max-width: 110%;
+    padding: 50px 0;
+}
+
+.companyIntro .container .row {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/*========================================== [8.0] Our Partners ==========================================*/
+.brands {
+    margin: 50px auto;
+}
+
+
+.brands .row {
+    column-gap: 0px;
+}
+
+
+.col-5 {
+    width: 250px;
+}
+
+
+.col-5 img {
+    width: 90%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+
+.col-5 img:hover {
+    filter: grayscale(0%);
+}
+
+
+/*========================================== [9.0] Footers ==========================================*/
+.footer {
+    background: #2C272E;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-top: auto;
+}
+
+
+.footer p {
+    color: #8a8a8a
+}
+
+
+.footer h2 {
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+
+.footer i {
+    color: #fff;
+    padding: 2px 0 ;
+}
+
+
+.footer-col-1, .footer-col-2, .footer-col-3 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+
+.footer-col-1 {
+    flex-basis: 30%;
+    margin: 10px 0;
+}
+
+
+.footer-col-1 img {
+    width: 90px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+
+.footer-col-2 h2 {
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+
+.footer-col-1 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3 {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.footer-col-3 ul {
+    display: inline-block;
+}
+
+.footer-col-3 ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 2px 2px;
+    align-items: left;
+    font-size: 24px;
+}
+
+
+.footer i:hover {
+    color:#61910F;
+    cursor: pointer;
+}
+
+/* End */

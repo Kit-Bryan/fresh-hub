@@ -1,0 +1,185 @@
+/* font-family: 'Calistoga', cursive;
+font-family: 'Didact Gothic', sans-serif; */
+
+:root {
+    --forest: #163A24;
+    --sunset: #F6BB27;
+    --sahara: #E48929;
+    --oak: #E48929;
+}
+
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: var(--forest);
+}
+
+h1 {
+    margin-bottom: 0;
+    padding: 2%;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+i {
+    color: #747474;
+}
+
+.checkout {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+/* Checkout Form */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15);
+    width: 70%;
+    height: 100%;
+    background-color: #ffdc95;
+    border-radius: 3%;
+    margin-left: 2%;
+}
+
+.checkout-form form {
+    margin: 0 4% 4%;
+    height: 100%;
+}
+
+.checkout-form form p {
+    margin: 3% 2%;
+    height: 20%;
+}
+
+
+.checkout-form form label {
+    display: block;
+    text-align: left;
+    margin: 4% 0 1%;
+    font-weight: bold;
+}
+
+.checkout-form form input {
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    padding: 1% 1%;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid #9c9c9c
+}
+
+.checkout-form form input:read-only {
+    color: #9c9c9c;
+    border: 1px solid #9c9c9c;
+    pointer-events: none;
+}
+
+.checkout-form form input:hover {
+    border-color: #1e1e1c;
+}
+
+.checkout-form form input:focus {
+    border: 2px solid;
+}
+
+
+.checkout-form form div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.checkout-form .payment-method p {
+    font-weight: bold;
+    margin: 0% 0 1% 2.5%;
+    height: 1%;
+}
+
+.checkout-form .payment-method i {
+    color: #45b545;
+    font-size: 1.4rem;
+    transform: translate(4px, 3px)
+}
+
+.checkout-form .payment-method label {
+    margin: 5px;
+    font-weight: normal;
+}
+
+.checkout-form .radio-button {
+    width: 10%;
+    height: 20%;
+}
+
+.checkout-form button {
+    font-family: 'Didact Gothic', sans-serif;
+    cursor: pointer;
+    background-color: white;
+    font-size: 1.3rem;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    transition: 0.1s ease-in;
+    padding: 1% 2%;
+    margin-top: 2%;
+}
+
+.checkout-form button:hover {
+    background-color: #226c3f;
+    color: whitesmoke;
+}
+
+
+
+/* Order Summary */
+.order-summary {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    width: 24%;
+    height: 80%;
+    margin-right: 2%;
+    text-align: center;
+    border-radius: 3%;
+    background-color: white;
+}
+.order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-summary table th {
+    padding: 0 2% 2%;
+}
+
+.order-summary table tr td.product-name{
+    text-align: left;
+    padding: 2% 0 4% 10%;
+}
+
+.order-summary table tr td.product-price {
+    text-align: left;
+    padding: 2% 0 2% 10%;
+}
+
+.order-summary table tfoot{
+    margin: 4% 2%;
+    font-weight: bold;
+    border-top: 1px solid black;
+}
+
+.order-summary table tfoot td {
+    padding: 4% 0;
+    font-weight: bold;
+    border-top: 1px solid black;
+}
+

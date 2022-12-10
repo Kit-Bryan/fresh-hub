@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Didact+Gothic&display=swap");
+
+:root{
+    --green:#163A24;
+    --orange:#E48929;
+    --red:#e74c3c;
+    --oak:#32142A;
+    --light-color:#666;
+    --white:#fff;
+    --light-bg:#f6f6f6;
+    --border:.2rem solid var(--oak);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+ }
+
+.submissionForm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;;
+    width: 40%;
+    border:var(--border);
+    border-color: var(--oak);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    border-width: 5px;
+    color:var(--oak);
+    font-size: 28px;
+}
+
+.submissionForm input{
+    height: 30px;
+    border: 2px solid var(--oak);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.submissionForm select{
+    height: 30px;
+    border: 2px solid var(--oak);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.product-img {
+    width:250px;
+    height:250px;
+    padding-top: 10px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.product_title {
+    font-family: 'Calistoga', cursive;
+    text-align: center;
+    margin: 0 auto 10px;
+    line-height: 60px;
+    color: var(--oak);
+}
+
+.p-category{
+    padding-top: 20px;
+    padding-bottom: 55px;
+    text-align: center;
+ }
+ 
+.p-category a{
+    padding:1.5rem;
+    text-align: center;
+    border:var(--border);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color:var(--oak);
+}
+ 
+.p-category a:hover{
+    background-color: var(--oak);
+    color: var(--white);
+}
+
+.p-category-image img {
+    display: block;
+    width: auto;
+    height : 550px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border:var(--border);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+
+.item-box {
+    display: block;
+    margin: auto;
+}
+
+.btn{
+    font-family: Didact Gothic, sans-serif;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: .5rem;
+    color:var(--white);
+    font-size: 2rem;
+    padding:1.3rem 3rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn{
+    background-color: var(--green);
+}
+
+.btn :hover{
+    background-color: var(--oak);
+    color: var(--white);
+}
+
+.product_name {
+    text-align: center;
+    color: var(--oak);
+    font-size: 22px;
+}
+
+.box {
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #163A24;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 28px;
+}
+
+.box img {
+    width: 400px;
+    height : auto; 
+}
+
+.input_lengthen {
+    width: 225px;
+    height: 20px;
+    text-align: left;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.row_page {
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+
+.column_page {
+    padding: 16px;
+    height: 250px;
+}
