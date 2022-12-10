@@ -1,0 +1,233 @@
+/* font-family: 'Calistoga', cursive;
+font-family: 'Didact Gothic', sans-serif; */
+
+:root {
+    --forest: #163A24;
+    --sunset: #F6BB27;
+    --sahara: #E48929;
+    --oak: #E48929;
+}
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.shopping-cart h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.products img {
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.shopping-cart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5% 3%;
+    align-items: center;
+}
+
+
+.shopping-cart table {
+    border-collapse: collapse;
+    border-radius: 0.8% 0.8% 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    width: 80vw;
+}
+
+.shopping-cart table thead th {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background-color: var(--forest);
+    font-weight: bold;
+}
+
+.shopping-cart table tbody td {
+    border-bottom: 0.2rem solid #dddddd;
+    padding: 1.1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.shopping-cart table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.shopping-cart table tbody tr.products:hover {
+    background-color: #d9f5e4;
+    color: black;
+}
+
+
+.shopping-cart table input[type="number"] {
+    border: 0.1rem solid black;
+    padding: 0.5rem;
+    color: black;
+    width: 5rem;
+    margin: 10px;
+    position: relative;
+    bottom: 4px;
+}
+
+/* Update button */
+.shopping-cart table input[type="submit"] {
+    cursor: pointer;
+    font-size: 1.3rem;
+    background-color: var(--sunset);
+    color: black;
+    border-radius: 0.5em;
+    transition: 0.1s ease-in;
+    padding: 2% 4%;
+}
+
+.shopping-cart table input[type="submit"]:hover {
+    background-color: #f69c27;
+    color: black;
+}
+
+
+/* Delete btn and Continue shopping btn */
+.continue-btn,
+.delete-btn {
+    width: auto;
+    text-align: center;
+    color: black;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.delete-btn {
+    background-color: #ff8400;
+    transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #ff0000a8;
+}
+
+.continue-btn {
+    background-color: #46fa88;
+    transition: 0.1s ease-in;
+}
+
+.continue-btn:hover {
+    background-color: #46fa88ad;
+}
+
+
+
+/* Grand total row */
+.shopping-cart table .table-bottom {
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+}
+
+/* Checkout button */
+.shopping-cart .checkout-btn {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.shopping-cart .checkout-btn a {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    color: black;
+    font-size: 1.7rem;
+    padding: 1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #46fa88;
+    transition: 0.1s ease-in;
+}
+
+
+.shopping-cart .checkout-btn a:is(:hover, :focus) {
+    background-color: #46fa88ad;
+    outline: 2px solid #46fa88ad;
+    outline-offset: 2px;
+}
+
+.shopping-cart .checkout-btn a.disabled {
+    pointer-events: none;
+    opacity: .5;
+    user-select: none;
+    background-color: #f2f2f2;
+}
+
+
+/* Media queries */
+
+@media (max-width:1312px) {
+    .shopping-cart table tbody td {
+        padding: 0.6rem;
+    }
+
+    .shopping-cart table input[type="number"] {
+        padding: 0.4rem;
+    }
+
+    .shopping-cart table input[type="submit"] {
+        padding: 2% 4%;
+        font-size: 1rem;
+    }
+
+    .delete-btn,
+    .continue-btn {
+        padding: 0.7rem;
+    }
+
+}
+
+@media (max-width:1189px) {
+    .shopping-cart table thead th {
+        font-size: 1rem;
+        padding: 1.3rem;
+    }
+
+    .shopping-cart table input[type="number"] {
+        padding: 0.2rem;
+    }
+
+    .shopping-cart table input[type="submit"] {
+        padding: 2%;
+        font-size: 1rem;
+    }
+
+    .delete-btn,
+    .continue-btn {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .shopping-cart .checkout-btn a {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width:1060px) {
+    .shopping-cart table thead th {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+}

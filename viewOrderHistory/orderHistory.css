@@ -1,0 +1,163 @@
+/**************************
+Author: Gan Ming liang
+TP No: TP063338 
+Subject: Order History UI
+**************************/
+
+/**************************
+F O N T - U S E D:
+font-family: 'Calistoga', cursive;
+font-family: 'Didact Gothic', sans-serif;
+**************************/
+
+html {
+    background: #163A24;
+}
+
+.database-order {
+    background:#163A24;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.order-header {
+    color: #fff;
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.order-border {
+    width: 100px;
+    height: 10px;
+    background: #61910F;
+    margin: 40px auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    color: #000;
+    background: #F2EFE6;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+th {
+    background-color: #262228;
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+/* width adjustment */
+.inquiry-textarea {
+    width: 40%;
+}
+
+.inquiry-id {
+    width: 12%;
+}
+
+.inquiry-subject {
+    width: 18%;
+}
+
+.inquiry-email {
+    width: 20%;
+}
+
+.inquiry-name {
+    width: 12%;
+}
+
+.search-order {
+    background: #163A24;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.order-box {
+    /* max-width: 950px; */
+    /* margin-left: 480px; */
+    overflow: hidden;
+    display: inline;
+}
+
+.order-form {
+    width: 15%;
+    display: inline;
+    box-sizing: border-box;
+    margin-left: 67%;
+    /* margin: auto; */
+    /* margin: 16px 0; */
+    border: 0;
+    border-radius: 30px;
+    background: #DBC8AC;
+    padding: 20px 40px;
+    outline: none;
+    color: #555;
+    transition: 0.5s;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.order-form:hover {
+    background: #F2EFE6;
+}
+
+.order-submit {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+    border: 0;
+    background: #29870b;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius:30px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+.order-submit:hover {
+    background: #F2EFE6;
+    color: #555;
+}
+
+.order-reset {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+    border: 0;
+    background: #E48929;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius:30px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
+.order-reset:hover {
+    background: #F2EFE6;
+    color: #555;
+}
