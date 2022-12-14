@@ -1,4 +1,4 @@
 # fresh-hub
 An ecommerce grocery store that provides various services to users
 
-Check out "Website screenshots.pdf" file to view the web interfaces created and designed by the team 
+Take a look at "Website screenshots.pdf" file to see the web interfaces that were designed and created by our team. This document contains screenshots of the websites that we have developed.
